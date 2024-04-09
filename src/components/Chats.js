@@ -48,7 +48,7 @@ const Chats = () => {
         formdata.append("username", user.email);
         formdata.append("secret", user.uid);
 
-        getFile(user.photoUrl).then((avatar) => {
+        getFile(user.photoURL).then((avatar) => {
           formdata.append("avatar", avatar, avatar.name);
 
           axios
@@ -79,7 +79,7 @@ const Chats = () => {
 
       <ChatEngine
         height="calce(100vh - 66px)"
-        projectId="c3864f45-d9b6-4284-a507-398f6b9a16c6"
+        projectID="c3864f45-d9b6-4284-a507-398f6b9a16c6"
         userName={user.email}
         userSecret={user.uid}
       />
