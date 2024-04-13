@@ -1,10 +1,9 @@
 import React from "react";
 import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
 import { auth } from "../firebase";
-import firebase from "firebase/compat/app";
 import { GoogleAuthProvider } from "firebase/auth";
 import { FacebookAuthProvider } from "firebase/auth";
-import { getAuth, signInWithRedirect } from "firebase/auth";
+import { signInWithRedirect } from "firebase/auth";
 
 import "firebase/auth";
 
